@@ -13,7 +13,31 @@ A mobile application with token authentication that allows the user to take pict
 - Joel Mathew
 - Caleb Stephen
 - Gibin K Jayan
-- Ruth Molly Benjamin
+- Ruth Moly Benjamin
+
+
+## Contents
+
+- [Deep Learning Models](#Deep-Learning-Models)
+- [Model 1 (YOLOv8)](#Model-1-(YOLOv8))
+- [Dataset](#Dataset)
+- [Data Preparation](#Data-Preparation)
+- [Data Storage and Organization](#Data-Storage-and-Organization)
+- [Code for training the model](#Code-for-training-the-model)
+- [Model 1 Evaluation](#Model-1-Evaluation)
+- [Sample Predictions - Real World Data](#Sample-Predictions---Real-World-Data)
+- [Model 2 (YOLOv5)](#Model-2-(YOLOv5))
+- [Initial Setup](#Initial-setup)
+- [Training the model](#Training-the-model)
+- [Making a Prediction using the model](#Making-a-Prediction-using-the-model)
+- [Deploying from Roboflow](#Deploying-from-Roboflow)
+- [Inspector Diet - The Application](#Inspector-Diet---The-Application)
+- [Django Webserver](#Django-Webserver)
+- [The Android Application](#The-Android-Application)
+- [How to use the server](#How-to-use-the-Server?)
+- [How to use the android application](#How-to-use-the-Android-Application?)
+- [Demo](#Demo)
+- [Acknowledgements](#Acknowledgements)
 
 
 
@@ -34,17 +58,30 @@ Kaggle: [Food Detection](https://www.kaggle.com/datasets/prashantsarkar/food-det
 This dataset was prepared by us and uploaded to Kaggle for public use. We prepared a dataset using images of various popular food items in India. The dataset contains 358 images of each food item isolated as well as 33 sample use cases in which the foods are interspersed with each other as well as other foods not in the dataset. The dataset usability rating is 7.50
 
 #### Sample Images
-Chapatti![Sample Image](https://i.imgur.com/QtLEsHw.jpeg)
+Chapatti
 
-Pizza![Sample Image](https://i.imgur.com/vasWL3j.jpeg)
+![Sample Image](https://i.imgur.com/QtLEsHw.jpeg)
 
-Soda![Sample Image](https://i.imgur.com/WojINJc.png)
+Pizza
 
-Idli![Sample Image](https://i.imgur.com/cQ4RRTt.jpeg)
+![Sample Image](https://i.imgur.com/vasWL3j.jpeg)
 
-Idli and Vada![Sample Image](https://i.imgur.com/JbCewEv.jpeg)
+Soda
 
-Burger, Pizza and Fries![Sample Image](https://i.imgur.com/ouriA6l.jpeghttps://i.imgur.com/QtLEsHw.jpeg)
+![Sample Image](https://i.imgur.com/WojINJc.png)
+
+Idli
+
+![Sample Image](https://i.imgur.com/cQ4RRTt.jpeg)
+
+Idli and Vada
+
+![Sample Image](https://i.imgur.com/JbCewEv.jpeg)
+
+Burger, Pizza and Fries
+
+![Sample Image](https://i.imgur.com/ouriA6l.jpeghttps://i.imgur.com/QtLEsHw.jpeg)
+
 ## Data Preparation
 
 The Data Was prepared using Roboflow and exported for YOLOv8. You can find the Roboflow link [here](https://universe.roboflow.com/intel-hackathon/food-detection-pgfas).
@@ -82,7 +119,7 @@ The Data Was prepared using Roboflow and exported for YOLOv8. You can find the R
 
 ![Sample](https://i.imgur.com/gNVizPg.jpeg)
 
-#### Data storage and organization
+#### Data Storage and Organization
 ```
 Dataset
 |-->Test
@@ -366,7 +403,7 @@ Test Image 2:
 image 2/41 /content/datasets/food-detector-4/test/images/11_jpg.rf.f.jpg: 640x640 1 Chapathi, 12.7ms
 ![](https://i.imgur.com/czTNWAJ.png)
 
-### Making a Prediction using the model:
+### Making a Prediction using the model
 
 In order to make a prediction, create a new directory to store the new test pictures. after that run the following line of code.
 The file 'download.jpg' is the image we wish to predict and its directory must be after --source.
@@ -507,9 +544,10 @@ These are:
 Everything besides login requires the Token to be in the header for the application to return a valid response.
 ## Demo
 
-You can see a youtube demonstration [here](https://youtu.be/eaDKzu1Nmlo)
+You can see a youtube demonstration [here](https://youtu.be/RlXGoAlhHj8)
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/eaDKzu1Nmlo/0.jpg)](https://youtu.be/eaDKzu1Nmlo)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/RlXGoAlhHj8/0.jpg)](https://www.youtube.com/watch?v=RlXGoAlhHj8)
+
 ## Acknowledgements
 
  - [Intel oneAPI](https://www.intel.com/content/www/us/en/developer/tools/oneapi/overview.html)
