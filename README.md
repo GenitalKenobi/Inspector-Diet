@@ -311,6 +311,7 @@ Train: 704 images
 Test: 41 images
 Validate: 65 images
 #### Yaml File:
+```
 names:
 - Apple
 - Chapati
@@ -334,6 +335,7 @@ roboflow:
 test: ../test/images
 train: /content/datasets/food-detector-4/train/images
 val: /content/datasets/food-detector-4/valid/images
+```
 
 ### Initial setup
 The first step is to clone the github repository of YoloV5.
